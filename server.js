@@ -17,13 +17,17 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/chivalry",
-  {
-    useCreateIndex: true,
-    useNewUrlParser: true
-  }
-);
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// Connect to the Mongo DB
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true });
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/chivalry",
+//   {
+//     useCreateIndex: true,
+//     useNewUrlParser: true
+//   }
+// );
 
 // Start the API server
 app.listen(PORT, () =>
