@@ -6,6 +6,7 @@ import NoMatch from "./pages/NoMatch";
 import NavigationBar from "./components/NavBar";
 import SignUp from "./pages/SignUp"
 import Gallery from "./pages/Gallery"
+import './style.css'
 
 
 function App() {

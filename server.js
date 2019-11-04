@@ -18,7 +18,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/chivalry";
 // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI, {useNewUrlParser: true });
 // mongoose.connect(
