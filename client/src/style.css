@@ -1,0 +1,171 @@
+body{
+    background-color:greenyellow;
+  }
+  
+  /*Home Page*/
+
+  .landingpage{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      height: 100%;
+      width: 100%;
+  }
+  
+@media screen and (max-width: 500px) {
+      .image {
+        width: 100%;
+      }
+    } */
+    
+/*SignUp Page*/
+#signupformid {
+  margin-top: 100px;
+  padding-top: 20px;
+  background: black;
+  height: 450px;
+  position: relative;
+  width: 700px;
+}
+
+label{
+  margin-left:20px;
+  color: red;
+
+}
+
+.text-muted{
+  margin-left:20px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.row1{
+  margin-left:25px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.btn-md{
+  margin-top: 15px;
+  margin-left:20px;
+  color:white;
+  font-family: 'Playfair Display', serif;
+  
+}
+.row2{
+  margin-left:20px;
+  margin-right:20px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.row3{
+  margin-left:20px;
+  margin-right:20px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+    
+
+/*SignIn Page*/
+Form {
+  margin-top: 100px;
+  padding-top: 20px;
+  background: black;
+  height: 300px;
+  position: relative;
+  width: 320px;
+}
+
+Label{
+  margin-left:20px;
+  color: red;
+
+}
+
+.text-muted{
+  margin-left:20px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+#formGridEmail{
+  margin-left:20px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+
+}
+
+#password{
+  margin-left:20px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+
+}
+Button{
+    margin-top: 15px;
+  margin-left:20px;
+  color:white;
+  font-family: 'Playfair Display', serif;
+  
+}
+
+/*Contact Page*/
+#contactForm {
+  margin-top: 100px;
+  padding-top: 20px;
+  background: black;
+  height: 500px;
+  position: relative;
+  width: 400px;
+}
+
+Label{
+  margin-left:20px;
+  color: red;
+
+}
+
+.text-muted{
+  margin-left:20px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.row6{
+  margin-left:20px;
+  margin-right:20px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+
+.btn-md{
+  margin-top: 15px;
+  margin-left:20px;
+  color:white;
+  font-family: 'Playfair Display', serif;
+  
+}
+.row4{
+  margin-left:20px;
+  margin-right:20px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.row5{
+  margin-left:20px;
+  margin-right:20px;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}

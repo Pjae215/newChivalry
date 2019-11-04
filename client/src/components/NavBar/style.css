@@ -1,0 +1,10 @@
+#logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.active a{
+    color: red !important;
+  }
