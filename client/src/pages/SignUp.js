@@ -1,13 +1,7 @@
 import React, { Component} from "react";
 import {Button} from 'react-bootstrap'
-// import Jumbotron from "../components/Jumbotron";
-// import Card from "../components/Card";
-// import form from "../components/form";
-// import Book from "../components/Book";
-// import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row} from "../components/Grid";
-// import { List } from "../components/List";
 
 class SignUp extends Component {
   // Setting the initial values of this.state.username and this.state.password
@@ -53,8 +47,8 @@ class SignUp extends Component {
   render() {
     return (
       
-      <form>
-          <Row> 
+      <form id ="signupformid">
+          <Row class = "row2"> 
             <Col size="md-6">
             <label> Email <input name="email" type="email" placeholder="Enter email" value={this.state.email} onChange={this.handleInputChange}/></label>
             
@@ -65,8 +59,8 @@ class SignUp extends Component {
           onChange={this.handleInputChange}/></label>
                 </Col>
 </Row>
-            <Row>
-                <Col size="md-6">
+<Row class = "row2"> 
+                <Col size="md-4">
                     <label> <select name="gender" value={this.state.gender}
           onChange={this.handleInputChange}>
                         <option>Choose...</option>
@@ -74,12 +68,12 @@ class SignUp extends Component {
                         <option>Female</option> Gender</select></label>
                 
                 </Col>
-                <Col size="md-6">
+                <Col size="md-4">
                     <label> Current Age <input name="age" minLength="2" maxLength="2" id="age" placeholder="Age" value={this.state.age}
           onChange={this.handleInputChange}/></label>
                   
                 </Col>
-                <Col size="md-6">
+                <Col size="md-4">
                     <label> Zipcode <input name="zipcode" minLength="5" maxLength="5" placeholder="Enter Zipcode" value={this.state.zipcode}
           onChange={this.handleInputChange}/></label>
                    
@@ -87,7 +81,7 @@ class SignUp extends Component {
                 
             </Row>
 
-            <Row>
+            <Row class = "row2"> 
                 <Col size="md-6">
                     <label> Password <input name="password" type="password" minLength="8" maxLength="8" placeholder="Password" value={this.state.password}
           onChange={this.handleInputChange}/></label>

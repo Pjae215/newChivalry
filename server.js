@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+const MONGODB_URI = "mongodb://paulaj:coding19@ds241308.mlab.com:41308/heroku_lh8pdq6c"
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -18,16 +18,13 @@ app.use(routes);
 
 // Connect to the Mongo DB
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/chivalry";
-// Connect to the Mongo DB
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true });
-// mongoose.connect(
-//   process.env.MONGODB_URI || "mongodb://localhost/chivalry",
-//   {
-//     useCreateIndex: true,
-//     useNewUrlParser: true
-//   }
-// );
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, (err) => {
+  if (err) {
+      console.log("There is a problem with the connection" + err)
+  } else {
+      console.log("Mongoose connection is good.")
+  }
+});
 
 // Start the API server
 app.listen(PORT, () =>

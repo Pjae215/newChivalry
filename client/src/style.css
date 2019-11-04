@@ -1,5 +1,5 @@
 body{
-    background-color:greenyellow;
+    background-color:black;
   }
   
   /*Home Page*/
@@ -23,9 +23,9 @@ body{
   margin-top: 100px;
   padding-top: 20px;
   background: black;
-  height: 450px;
+  height: 25vw;
   position: relative;
-  width: 700px;
+  width: 100%;
 }
 
 label{
@@ -72,7 +72,7 @@ label{
     
 
 /*SignIn Page*/
-Form {
+form {
   margin-top: 100px;
   padding-top: 20px;
   background: black;
