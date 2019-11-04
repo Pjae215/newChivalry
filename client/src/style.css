@@ -81,17 +81,12 @@ form {
   width: 320px;
 }
 
-Label{
+label{
   margin-left:20px;
   color: red;
 
 }
 
-.text-muted{
-  margin-left:20px;
-  font-family: 'Playfair Display', serif;
-
-}
 
 #formGridEmail{
   margin-left:20px;

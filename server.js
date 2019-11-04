@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+var logger = require("morgan");
 const MONGODB_URI = "mongodb://paulaj:coding19@ds241308.mlab.com:41308/heroku_lh8pdq6c"
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
@@ -15,6 +16,8 @@ if (process.env.NODE_ENV === "production") {
 
 // Add routes, both API and view
 app.use(routes);
+app.use(logger("dev"));
+
 
 // Connect to the Mongo DB
 
